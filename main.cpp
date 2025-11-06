@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int stack[5];
+    int top = -1;
+
+    top++;
+    stack[top] = 10;
+    top++;
+    stack[top] = 20;
+    top++;
+    stack[top] = 30;
+
+    cout << "目前堆疊內容: " << endl;
+    for (int i = 0; i <= top; i++) {
+        cout << stack[i] << " ";
+    }
+
+    cout << endl;
+
+    if (top >= 0) {
+        cout << "彈出元素: " << stack[top] << endl;
+        top--;
+    } else {
