@@ -1,25 +1,12 @@
-
 #include <iostream>
+using namespace std;
 
-double calculateBMI(double weight_kg, double height_cm){
-    if (height_cm <= 0) return 0.0;
-
-    double height_m = height_cm / 100.0; // bmi 計算
-    double bmi = weight_kg / (height_m * height_m);
-    return bmi;
+int main() {
+    int number = 30;
+    cout << "The value of number is: " << number << endl;
+    return 0;
 }
 
-int main()
-{
-    double weight1, weight2, height1, height2;
-
-    weight1 = 80;
-    weight2 = 70;
-    height1 = 168;
-    height2 = 188;
-
-    std::cout << "your bmi is " << calculateBMI(weight1, height1) << std::endl;
-    std::cout << "another bmi is " << calculateBMI(weight2, height2) << std::endl;
-
-    return 0;
+int sum(int a, int b) {
+    return a + b;
 }
